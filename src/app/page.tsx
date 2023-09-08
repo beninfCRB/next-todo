@@ -9,10 +9,6 @@ import DataTodo from './data'
 export default function Home() {
   const router = useRouter()
 
-  const onItem = (id: string) => {
-    return router.push(`/[${id}]`)
-  }
-
   return (
     <ConfigProvider theme={theme}>
       <Card
