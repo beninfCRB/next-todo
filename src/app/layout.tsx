@@ -38,6 +38,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>{metadata.title as string}</title>
+        <link rel="shortcut icon" href="/public/next.svg" type="image/x-icon" />
+      </head>
       <StyledComponentsRegistry>
         <body className={inter.className}>
           <ConfigProvider
