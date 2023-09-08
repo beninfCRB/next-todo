@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <ConfigProvider theme={theme}>
       <Card
+        headStyle={{ backgroundColor: 'greenyellow' }}
         title='TODO LIST'
         bodyStyle={{ padding: 0 }}
         extra={<Button type='primary' onClick={() => router.push('add')}>Tambah</Button>}
